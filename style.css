@@ -1,0 +1,335 @@
+*{
+    padding:0;
+    margin:0px;
+    
+}
+
+body{
+    background-color: #dbd5d5;
+}
+
+#sticky_bar{
+    height: 65px;
+    width:100%;
+    background-color: black;  
+    display:flex;
+    align-items: center; 
+    color:white;
+    flex-direction: row;
+    position:sticky;
+    top:0;
+    z-index: 2;
+    justify-content: space-around;
+}
+/* 
+Parent element set here upwards */
+
+
+.main_logo{
+    height: 45px;
+    width:100px;
+
+}
+
+
+
+.search{
+    height: 40px;
+    background-color: rgb(255, 167, 35);
+    color:black;
+    font-size: 20px;
+    text-align:center;
+    cursor:pointer;
+   
+    border:none;
+    width: 40px;
+    border-radius: 0 4px 4px 0;
+
+}
+
+
+.stickychild{
+    padding:6px;
+    text-align: center;
+    margin: 6px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+ 
+}
+
+/* Here border is made on the stickybar on hovering........................................................................................................ */
+.stickychild:hover{
+    border: 1px solid white;
+}
+
+.grow{
+    flex-grow: 2; 
+    border:none;
+}
+
+
+#dropdown{
+    background-color: rgb(167, 167, 167);
+    color:rgb(0, 0, 0);
+    height:40px;
+    text-align: center;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+
+
+#sticky_searchbar{
+    width:88%;
+    height: 40px;
+    margin: 0;
+    border:none;
+}
+
+.small{
+    font-size: 14px;
+    text-align: left;
+}
+
+.big{
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.light_shadow{
+    font-size: 14px;
+    opacity: 0.8;
+    text-align:left;
+}
+
+
+.logoindia{
+   height: 15px;
+    margin-right: 1.5px;
+    
+}
+
+/* Here the second nav styling starts.................................................................................................................. */
+
+.general{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #232F3E;
+    color:white;
+    height:35px;
+    position:relative;
+    width:100%;
+    margin-right:2px;
+    
+}
+
+.general_links{
+    padding:6px;
+    cursor: pointer;
+}
+
+.general_links:hover{
+    border: 1px solid white;
+}
+
+/* From here the main content of the web page begins ...................................................................................................*/
+
+.main{
+    background: linear-gradient(to bottom,rgba(0,0,0,0)0%, rgba(54, 54, 54, 0.207)48%, rgba(255, 255, 255, 0.75) 100%), url(resources/hero_image.jpg) no-repeat;
+    height:85vh;
+    width:100%;
+    background-size: 100vw;
+   
+}
+
+.maincard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -400px;
+    
+    
+   
+}
+
+.card{
+    
+    height: 400px;
+    width:330px;
+    
+    margin: 10px 10px 10px 10px;
+    background-color:white;
+    padding: 10px;
+}
+
+.para_style{
+    font-size: 12px;
+}
+
+
+
+.row1, .row2{
+    margin:10px;
+    display: flex;
+    flex-wrap: nowrap;
+    
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.image_card{
+    height:120px;
+    width:140px;
+    margin: 10px;
+    padding:10px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.image_card > img{
+    height: inherit;
+    width:140px;
+}
+
+
+/* HERE THE FOOTER PART STYLLING STARTS..................................................................................................................... */
+
+.back-to-top{
+    height:40px;
+    width:100%;
+    color:white;
+    text-align:center;
+    background-color: #37475A;
+
+}
+
+
+.back-to-top:hover{
+    background-color: #5e6e82;
+    cursor: pointer;
+}
+
+.footer_one, .footer_one_two{
+    background-color: #232F3E;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+}
+
+.lists{
+    margin:30px 35px 30px 35px;
+    padding:10px;
+}
+
+ul{
+    list-style-type: none;
+    line-height: 35px;
+    opacity: 0.85;
+}
+
+li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#horizantal_line{
+    opacity:0.1;
+    line-height: 0.5px;
+    
+}
+
+.footer_one_two{
+    display:inline-block;
+    width:100%;
+}
+
+.footer_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_logo > .div> img{
+    height: 60px;
+    width:100px;
+    margin:10px;
+    padding:5px;
+}
+
+.countries{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:10px;
+}
+
+.countries> div{
+    margin:8px;
+    padding: 1px;
+    font-size: 15px;
+    line-height: 8px;
+}
+
+.countries > div:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.footer_two{
+    background-color: #151C25;
+    color: white;
+   
+}
+
+.line1, .line2{
+    display:flex;
+    justify-content:center;;
+    align-items: center;
+    padding:0 10px 0 10px;
+    margin: 0 10px 0 10px;
+}
+
+.item_line{
+    margin: 30px;
+    padding: 10px;
+}
+
+.item_line> p {
+    opacity:0.5;
+    font-size: 13px;
+}
+
+h5{
+    
+    font-weight: 200;
+    color: white;
+}
+
+.item_line:hover{
+    text-decoration:underline ;
+}
+
+.secondlast, .last{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+
+}
+.final{
+    margin-right: 20px;
+    margin-left: 20px;
+
+}
+
+.last{
+    padding-bottom: 40px;
+}
+
+.final:hover{
+    text-decoration: underline;
+}
